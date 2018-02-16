@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Mod2_Lab1
 {
-    class Employee
+    // Abstract class
+    abstract class Employee
     {
         // 3 private member variables: employeeName, employeeBaseSalary, and employeeId
         private string employeeName;
@@ -85,10 +86,7 @@ namespace Mod2_Lab1
             return this.ID + " " + this.Name;
         }
 
-        // This method returns the employee's ID and Name and confirms that the employee is in the system
-        public virtual String employeeStatus()
-        {
-            return toString() + " is in the company's system";
-        }
+        // Abstract method
+        public abstract String employeeStatus();
     }
 }
